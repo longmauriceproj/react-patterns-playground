@@ -50,23 +50,13 @@ scripts/
 - `yarn format`: Format code with Prettier
 - `yarn lint`: Run ESLint
 
-## Starting a New Exercise
+## Getting Started
 
-1. Run `yarn select-exercise`
-2. Choose exercise from the menu
-3. Start development server with `yarn dev`
-4. Open browser at http://localhost:5173
-
-## Creating Multiple Attempts
-
-Each attempt creates a fresh copy of exercises:
-
-```bash
-yarn create-attempt  # Creates attempt-1
-yarn create-attempt  # Creates attempt-2
-```
-
-Previous attempts are preserved for reference.
+1. Run `yarn create-attempt`. Previous attempts are preserved for reference.
+2. Run `yarn select-exercise`
+3. Choose exercise from the menu
+4. Start development server with `yarn dev`
+5. Open browser at http://localhost:5173
 
 ## Contributing
 
