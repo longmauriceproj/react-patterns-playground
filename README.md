@@ -27,6 +27,10 @@ yarn select-exercise
 
 # Start development server
 yarn dev
+
+# Reset your attempts
+yarn reset-attempts
+
 ```
 
 ## Project Structure
@@ -38,6 +42,7 @@ src/
 
 scripts/
 ├── create-attempt.ts    # Creates new attempt directory
+├── reset-attempts.ts    # Resets all attempts
 └── select-exercise.ts   # Exercise selection utility
 ```
 
@@ -46,6 +51,7 @@ scripts/
 - `yarn dev`: Start development server
 - `yarn build`: Build for production
 - `yarn create-attempt`: Create new practice attempt
+- `yarn reset-attempts`: Reset all practice attempts
 - `yarn select-exercise`: Choose exercise to work on
 - `yarn format`: Format code with Prettier
 - `yarn lint`: Run ESLint
@@ -57,6 +63,8 @@ scripts/
 3. Choose exercise from the menu
 4. Start development server with `yarn dev`
 5. Open browser at http://localhost:5173
+
+If you wish to reset your attempts, run `yarn reset-attempts`.
 
 ## Contributing
 
