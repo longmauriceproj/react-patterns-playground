@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+# React Patterns Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A hands-on learning repository for React patterns, best practices, and common challenges. Practice component composition, state management, performance optimization, and more through guided exercises.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (v18+ recommended)
+- Yarn Classic (v1.22.22)
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
+# Clone repository
+git clone https://github.com/yourusername/react-patterns-playground.git
+cd react-patterns-playground
 
-- Configure the top-level `parserOptions` property like this:
+# Install dependencies
+yarn install
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+# Create your first attempt
+yarn create-attempt
+
+# Select an exercise
+yarn select-exercise
+
+# Start development server
+yarn dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Project Structure
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
 ```
+src/
+├── exercises/       # Exercise templates
+└── attempts/        # Your practice attempts
+
+scripts/
+├── create-attempt.ts    # Creates new attempt directory
+└── select-exercise.ts   # Exercise selection utility
+```
+
+## Available Scripts
+
+- `yarn dev`: Start development server
+- `yarn build`: Build for production
+- `yarn create-attempt`: Create new practice attempt
+- `yarn select-exercise`: Choose exercise to work on
+- `yarn format`: Format code with Prettier
+- `yarn lint`: Run ESLint
+
+## Starting a New Exercise
+
+1. Run `yarn select-exercise`
+2. Choose exercise from the menu
+3. Start development server with `yarn dev`
+4. Open browser at http://localhost:5173
+
+## Creating Multiple Attempts
+
+Each attempt creates a fresh copy of exercises:
+
+```bash
+yarn create-attempt  # Creates attempt-1
+yarn create-attempt  # Creates attempt-2
+```
+
+Previous attempts are preserved for reference.
+
+## Contributing
+
+If you'd like to contribute new exercises:
+
+1. Create new directory in `src/exercises/`
+2. Include:
+   - `problem.tsx`: Exercise starter code
+   - `solution.tsx`: Example solution
+   - `README.md`: Exercise instructions
+
+## License
+
+MIT
