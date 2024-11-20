@@ -4,6 +4,8 @@ A hands-on learning repository for React patterns, best practices, and common ch
 
 ## Prerequisites
 
+Make sure you have Node.js and yarn installed:
+
 - Node.js (v18+ recommended)
 - Yarn Classic (v1.22.22)
 
