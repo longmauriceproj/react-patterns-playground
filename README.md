@@ -4,6 +4,8 @@ A hands-on learning repository for React patterns, best practices, and common ch
 
 ## Prerequisites
 
+The exercises in this project are designed to be completed using React and TypeScript. You'll be most productive if you already have a basic understanding of React and its core concepts. Please refer to the [official React documentation](https://react.dev/) if you're new to React. Their [tutorial](https://react.dev/learn) is a great place to start.
+
 Make sure you have Node.js and yarn installed:
 
 - Node.js (v18+ recommended)
@@ -63,6 +65,8 @@ scripts/
 3. Choose exercise from the menu
 4. Start development server with `yarn dev`
 5. Open browser at http://localhost:5173
+6. Navigate to the exercise directory in `src/attempts/your-latest-attempt/exercise-name/` and review the instructions in the `README.md` file
+7. Edit the `problem.tsx` file in `src/attempts/your-latest-attempt/exercise-name/`
 
 If you wish to reset your attempts, run `yarn reset-attempts`.
 
