@@ -10,4 +10,10 @@ export const exercises = [
     title: 'Nested Components Refactor',
     description: 'Refactor a nested component into a more manageable structure',
   },
+  {
+    id: 'hoisting-state-to-url',
+    title: 'Hoisting State to URL',
+    description:
+      'Learn to manage state in the URL for better sharing and linking',
+  },
 ];
