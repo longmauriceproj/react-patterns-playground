@@ -70,6 +70,8 @@ scripts/
 
 If you wish to reset your attempts, run `yarn reset-attempts`.
 
+If you want to see the solution, add `/solution` to the URL (e.g. http://localhost:5173/solution).
+
 ## Contributing
 
 If you'd like to contribute new exercises:
