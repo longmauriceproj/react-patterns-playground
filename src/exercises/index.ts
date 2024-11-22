@@ -16,4 +16,9 @@ export const exercises = [
     description:
       'Learn to manage state in the URL for better sharing and linking',
   },
+  {
+    id: `state-sync-with-useeffect`,
+    title: `State Sync with useEffect`,
+    description: `Learn why useEffect should be avoided for state synchronization and explore better alternatives for managing state effectively.`,
+  },
 ];
