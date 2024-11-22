@@ -58,6 +58,10 @@ scripts/
 - `yarn format`: Format code with Prettier
 - `yarn lint`: Run ESLint
 
+For development only:
+
+- `yarn select-exercise:dev`: Choose exercise to display when updating or adding an exercise
+
 ## Getting Started
 
 1. Run `yarn create-attempt`. Previous attempts are preserved for reference.
@@ -70,7 +74,9 @@ scripts/
 
 If you wish to reset your attempts, run `yarn reset-attempts`.
 
-If you want to see the solution, add `/solution` to the URL (e.g. http://localhost:5173/solution).
+If you wish to see the solution, add `/solution` to the URL (e.g. http://localhost:5173/solution).
+
+DO NOT modify the files in the `exercise` directory. These are the templates for new attempts.
 
 ## Contributing
 
