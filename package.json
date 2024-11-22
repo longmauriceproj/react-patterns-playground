@@ -13,7 +13,8 @@
     "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,md}\"",
     "create-attempt": "tsx scripts/create-attempt.ts",
     "reset-attempts": "tsx scripts/reset-attempts.ts",
-    "select-exercise": "tsx scripts/select-exercise.ts"
+    "select-exercise": "tsx scripts/select-exercise.ts",
+    "select-exercise:dev": "tsx scripts/select-exercise-dev-only.ts"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
