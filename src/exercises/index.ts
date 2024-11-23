@@ -27,4 +27,10 @@ export const exercises = [
     title: 'Semantic HTML',
     description: 'Learn to use semantic HTML elements to improve accessibility',
   },
+  {
+    id: 'avoiding-premature-abstraction',
+    title: 'Avoiding Premature Abstraction',
+    description:
+      'Learn to avoid premature abstraction and refactor components at the right time',
+  },
 ];
