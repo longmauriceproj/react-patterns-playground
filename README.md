@@ -35,6 +35,32 @@ yarn reset-attempts
 
 ```
 
+## Getting Started
+
+1. Run `yarn create-attempt`. Previous attempts are preserved for reference.
+2. Run `yarn select-exercise`
+3. Choose exercise from the menu
+4. Start development server with `yarn dev`
+5. Open browser at http://localhost:5173
+6. Navigate to the exercise directory in `src/attempts/your-latest-attempt/exercise-name/` and review the instructions in the `README.md` file
+7. Edit the `problem.tsx` file in `src/attempts/your-latest-attempt/exercise-name/`
+
+If you wish to reset your attempts, run `yarn reset-attempts`.
+
+If you wish to see the solution, add `/solution` to the URL (e.g. http://localhost:5173/solution).
+
+DO NOT modify the files in the `exercise` directory. These are the templates for new attempts.
+
+## Exercise List
+
+- Avoiding Premature Abstraction
+- Component Breakdown
+- Hoisting State to the URL
+- Refactoring a Nested Component
+- Recursive Components
+- Semantic HTML
+- State Synchronization with useEffect
+
 ## Project Structure
 
 ```
@@ -62,22 +88,6 @@ For development only:
 
 - `yarn select-exercise:dev`: Choose exercise to display when updating or adding an exercise
 
-## Getting Started
-
-1. Run `yarn create-attempt`. Previous attempts are preserved for reference.
-2. Run `yarn select-exercise`
-3. Choose exercise from the menu
-4. Start development server with `yarn dev`
-5. Open browser at http://localhost:5173
-6. Navigate to the exercise directory in `src/attempts/your-latest-attempt/exercise-name/` and review the instructions in the `README.md` file
-7. Edit the `problem.tsx` file in `src/attempts/your-latest-attempt/exercise-name/`
-
-If you wish to reset your attempts, run `yarn reset-attempts`.
-
-If you wish to see the solution, add `/solution` to the URL (e.g. http://localhost:5173/solution).
-
-DO NOT modify the files in the `exercise` directory. These are the templates for new attempts.
-
 ## Contributing
 
 If you'd like to contribute new exercises:
@@ -87,6 +97,8 @@ If you'd like to contribute new exercises:
    - `problem.tsx`: Exercise starter code
    - `solution.tsx`: Example solution
    - `README.md`: Exercise instructions
+3. Add exercise to `exercises` array in `exercises/index.ts`
+4. Run `yarn select-exercise:dev` and select the new exercise to ensure it displays in the development server
 
 ## License
 
