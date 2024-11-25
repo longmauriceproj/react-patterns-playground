@@ -33,4 +33,10 @@ export const exercises = [
     description:
       'Learn to avoid premature abstraction and refactor components at the right time',
   },
+  {
+    id: 'recursive-components',
+    title: 'Recursive Components',
+    description:
+      'Learn to create recursive components for dynamic data structures',
+  },
 ];
